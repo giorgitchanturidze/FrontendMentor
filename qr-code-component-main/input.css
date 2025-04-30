@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  /* Font */
+  --font-sans: "Outfit", sans-serif;
+
+  /* Breakpoints */
+  --breakpoint-sm: 375px;
+  --breakpoint-lg: 1440px;
+
+  /* Colors */
+  --color-white: hsl(0 0% 100%);
+  --color-slate-300: hsl(212 45% 89%);
+  --color-slate-500: hsl(216 15% 48%);
+  --color-slate-900: hsl(218 44% 22%);
+
+  /* Typography */
+  --text-base: 0.9375rem; /* 15px */
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    font-size: var(--text-base);
+    color: var(--color-slate-900);
+    background-color: var(--color-white);
+  }
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+      color: hsl(228, 45%, 44%);
+  }
+}
